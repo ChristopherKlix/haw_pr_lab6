@@ -4,15 +4,13 @@
 #include <time.h>
 
 #include "cypher.h"
+#include "vector.h"
 
 #define TASK 2;
-
-typedef int* VECTOR;
 
 void read_command_line_args(int, char const*[]);
 int caesar_cypher(void);
 void vector(void);
-int *find_int(int, VECTOR, size_t);
 
 int main(int argc, char const *argv[])
 {
@@ -125,19 +123,4 @@ void vector(void)
     free(vector);
 
     return;
-}
-
-int *find_int(int n, VECTOR vector, size_t vector_dimensions)
-{
-    int *first_address = NULL;
-
-    for (size_t i = 0; i < vector_dimensions; i++)
-    {
-        if (vector[i] == n)
-        {
-            first_address = &vector[i];
-        }
-    }
-
-    return first_address;
 }
