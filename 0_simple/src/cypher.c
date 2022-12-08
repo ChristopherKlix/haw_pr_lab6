@@ -4,6 +4,11 @@
 
 #include "cypher.h"
 
+void cypher_set_mode(CYPHER_MODE mode)
+{
+    return;
+}
+
 // Proxy caller function to start encryption
 CYPHER_STATUS cypher_encrypt(CYPHER_MSG msg, CYPHER_MSG buf, CYPHER_KEY key)
 {
