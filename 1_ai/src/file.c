@@ -30,3 +30,14 @@ char *read_file(char *filename)
     // return the string
     return str;
 }
+
+// write a function that writes a string into a .txt file
+void write_file(char *filename, char *str)
+{
+    // open the file
+    FILE *file = fopen(filename, "w");
+    // write the string into the file
+    fwrite(str, sizeof(char), strlen(str), file);
+    // close the file
+    fclose(file);
+}

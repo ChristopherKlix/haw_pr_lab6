@@ -4,5 +4,6 @@
 
 // include prototypes
 char *read_file(char *filename);
+void write_file(char *filename, char *str);
 
 #endif

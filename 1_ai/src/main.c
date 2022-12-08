@@ -5,31 +5,53 @@
 // include file.h
 #include "file.h"
 
+// marco definition TASK
+#define TASK 1
+
 // typedef an integer array as VECTOR
 typedef int* VECTOR;
 
+// function declaration
+void print_args(int argc, char const *argv[]);
+VECTOR generate_vector(int n);
+int *find_number(int *arr, int size, int number);
+char *caesar_cipher(char *str, int key);
+
 int main(int argc, char const *argv[])
 {
-    // read the example.txt file
-    char *str = read_file("./src/example.txt");
-    // print the contents of the file
-    printf("%s", str);
-    // free the memory
-    free(str);
+    // store marco task in a variable
+    int task = TASK;
 
-    // // call caesar_cipher
-    // char str[] = "Hello World";
-    // int key = 3;
-    // printf("Original string: %s", str);
-    // char encrypted_str[] = caesar_cipher(str, key);
-    // printf("Encrypted string: %s", encrypted_str);
+    // if clause for task for 0 1 2
+    if (task == 0)
+    {
+        // print all command line arguments
+        print_args(argc, argv);
+    }
+    else if (task == 1)
+    {
+        // print the contents of the file
+        char *str = read_file("./src/example.txt");
+        printf("%s", str);
 
-    // // generate a vector of size 10
-    // VECTOR vec = generate_vector(10);
-    // // find a number n in the vector
-    // int *number = find_number(vec, 10, 5);
+        // call caesar_cipher
+        int key = 3;
+        printf("Original string: %s", str);
+        char *encrypted_str = caesar_cipher(str, key);
+        printf("Encrypted string: %s", encrypted_str);
 
-    // return 0;
+        // write the encrypted string into a file
+        write_file("./src/encrypted.txt", encrypted_str);
+    }
+    else if (task == 2)
+    {
+        // generate a vector of size 10
+        VECTOR vec = generate_vector(10);
+        // find a number n in the vector
+        int *number = find_number(vec, 10, 5);
+    }
+
+    return 0;
 }
 
 /* write a function that prints all command line arguments */
