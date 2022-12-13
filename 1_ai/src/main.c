@@ -66,7 +66,7 @@ void print_args(int argc, char const *argv[])
 // write a function that generates a VECTOR of size n
 VECTOR generate_vector(int n)
 {
-    VECTOR vec = (VECTOR)malloc(n * sizeof(int));
+    VECTOR vec = malloc(n * sizeof(int));
     for (int i = 0; i < n; i++)
     {
         vec[i] = i;

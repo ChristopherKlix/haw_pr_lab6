@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "**/*.html": "html",
+        "**/templates/**/*.html": "django-html",
+        "**/templates/**/*": "django-txt",
+        "**/requirements{/**,*}.{txt,in}": "pip-requirements",
+        "print_args.h": "c",
+        "stdio.h": "c",
+        "types.h": "c",
+        "stddef.h": "c",
+        "stdlib.h": "c",
+        "file.h": "c",
+        "unistd.h": "c"
+    }
+}
