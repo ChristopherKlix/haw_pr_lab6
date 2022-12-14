@@ -49,7 +49,7 @@ long safely_convert_string_to_long(const char *str, bool exit_on_error)
     // in the string could be converted, indicating an error,
     // or if the number is too large to be represented by a long integer,
     // pointing to the first character that could not be converted anymore.
-    char* endptr;
+    char *endptr;
 
     // The errno global variable is also checked
     // to see if any errors occurred during the conversion.
