@@ -1,6 +1,6 @@
 // possible executions
 // 1, 2, 3
-#define TASK 3
+#define TASK 2
 
 #include "task1.h"
 #include "task2.h"
