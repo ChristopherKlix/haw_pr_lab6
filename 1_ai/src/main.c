@@ -48,7 +48,7 @@ int main(int argc, char const *argv[])
         // generate a vector of size 10
         VECTOR vec = generate_vector(10);
         // find a number n in the vector
-        int *number = find_number(vec, 10, 5);
+        int *number = find_number((vec), 10, 5);
     }
 
     return 0;
