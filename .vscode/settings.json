@@ -10,6 +10,7 @@
         "stddef.h": "c",
         "stdlib.h": "c",
         "file.h": "c",
-        "unistd.h": "c"
+        "unistd.h": "c",
+        "task1.h": "c"
     }
 }
