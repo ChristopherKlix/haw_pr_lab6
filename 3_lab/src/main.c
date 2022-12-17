@@ -10,7 +10,7 @@ int main(int argc, char const *argv[])
 {
     #if TASK == 1
         execute_task1(argc, argv);
-    #elif TASK == 2 
+    #elif TASK == 2
         execute_task2(argc, argv);
     #elif TASK == 3
         execute_task3(argc, argv);
